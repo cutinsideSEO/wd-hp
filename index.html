@@ -18,11 +18,14 @@
             color: #EAEAEA;
             overflow-x: hidden; /* Prevent horizontal scroll from logo scroller */
         }
-        .hero-bg {
-            background: linear-gradient(to bottom, #0A0A0A 0%, rgba(10,10,10,0) 50%, #0A0A0A 100%), url('https://www.westerndigital.com/content/dam/store/en-us/assets/home-page/lifestyle/mh-1a-data-centers-always-rely-on-hdd.png');
-            background-size: cover;
-            background-position: center;
-        }
+    .hero-bg {
+    background: 
+        linear-gradient(rgba(10, 10, 10, 0.5), rgba(10, 10, 10, 0.5)), /* Darkening Overlay */
+        linear-gradient(to bottom, #0A0A0A 0%, rgba(10,10,10,0) 50%, #0A0A0A 100%), 
+        url('https://www.westerndigital.com/content/dam/store/en-us/assets/home-page/lifestyle/mh-1a-data-centers-always-rely-on-hdd.png');
+    background-size: cover;
+    background-position: center;
+}
         .stat-card {
             background: #111111;
             border: 1px solid #222222;
