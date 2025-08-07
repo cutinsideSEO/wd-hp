@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High-Capacity HDDs for PCs, NAS, Gaming, Data Centers, and AI Data Cycles | Western Digital</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Manrope', sans-serif;
+            background-color: #0A0A0A;
+            color: #EAEAEA;
+            overflow-x: hidden; /* Prevent horizontal scroll from logo scroller */
+        }
+        .hero-bg {
+            background: linear-gradient(to bottom, #0A0A0A 0%, rgba(10,10,10,0) 50%, #0A0A0A 100%), url('https://images.unsplash.com/photo-1614741118884-62ac62b22860?q=80&w=2574&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+        .stat-card {
+            background: #111111;
+            border: 1px solid #222222;
+        }
+        .finder-btn {
+            transition: all 0.2s ease-in-out;
+            border: 1px solid #333;
+        }
+        .finder-btn.active {
+            background-color: #0077FF;
+            border-color: #0077FF;
+            color: white;
+            transform: scale(1.05);
+        }
+        .section {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .gradient-text {
+            background: -webkit-linear-gradient(45deg, #0077FF, #00C2FF);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .promo-bg {
+             background: linear-gradient(90deg, #0077FF 0%, #003C7E 100%);
+        }
+
+        /* Logo Scroller Animation */
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .logo-scroller {
+            display: inline-block;
+            animation: scroll 40s linear infinite;
+            white-space: nowrap;
+        }
+        .logo-scroller-container {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+        .logo-scroller-container::before,
+        .logo-scroller-container::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100px;
+            z-index: 2;
+        }
+        .logo-scroller-container::before {
+            left: 0;
+            background: linear-gradient(to right, #000000 0%, rgba(0,0,0,0) 100%);
+        }
+        .logo-scroller-container::after {
+            right: 0;
+            background: linear-gradient(to left, #000000 0%, rgba(0,0,0,0) 100%);
+        }
+
+    </style>
+</head>
+<body class="bg-black">
+
+    <!-- Header / Navigation -->
+    <header class="bg-black/50 backdrop-blur-lg border-b border-gray-800 sticky top-0 z-50">
+        <nav class="container mx-auto px-6 lg:px-8 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-8">
+                <a href="#" class="flex-shrink-0">
+                    <svg class="h-7 w-auto" viewBox="0 0 174 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24.46 32.78H32.3v-5.02h-7.84v-4.98h7.1v-5.04h-7.1v-4.98h7.84V7.74H16.62v32.52h15.72v-5.02h-7.84v-2.46Z" fill="#FFFFFF"></path><path d="M43.34 40.26h-7.84V7.74h7.84v32.52ZM39.42 3.3a3.92 3.92 0 1 0 0-7.84 3.92 3.92 0 0 0 0 7.84Z" fill="#FFFFFF"></path><path d="M63.18 40.26h-7.84V7.74h15.7v5.02h-7.86v9.98h7.1v5.02h-7.1v12.5Z" fill="#FFFFFF"></path><path d="M83.42 40.26h-7.86V7.74h7.86v32.52Z" fill="#FFFFFF"></path><path d="M103.64 40.26h-7.84V7.74h7.84v32.52Z" fill="#FFFFFF"></path><path d="M112.5 24.32a12.18 12.18 0 1 0 24.36 0 12.18 12.18 0 0 0-24.36 0Zm16.52 0a4.34 4.34 0 1 1-8.68 0 4.34 4.34 0 0 1 8.68 0Z" fill="#FFFFFF"></path><path d="M149.36 40.26h-7.84V7.74h7.84v32.52Z" fill="#FFFFFF"></path><path d="M165.16 40.26h-7.84V7.74h15.7v5.02h-7.86v9.98h7.1v5.02h-7.1v12.5Z" fill="#FFFFFF"></path><path d="m.02 24.01 11.23-19.45h-5.6L0 14.95v18.1h13.43v-5.02H5.02v-3.99Z" fill="#0077FF"></path><path d="m11.25 4.56-5.6 9.7h11.2l-5.6-9.7Z" fill="#0077FF"></path></svg>
+                </a>
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="#" class="text-gray-300 hover:text-white font-medium transition-colors">Products</a>
+                    <a href="#" class="text-white font-semibold">Solutions</a>
+                    <a href="#" class="text-gray-300 hover:text-white font-medium transition-colors">Support</a>
+                    <a href="#" class="text-gray-300 hover:text-white font-medium transition-colors">Company</a>
+                </div>
+            </div>
+            <div class="flex items-center space-x-6">
+                <a href="#" class="text-gray-300 hover:text-white font-medium text-sm transition-colors">Sign In</a>
+                <a href="#" class="bg-blue-600 hover:bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg text-sm transition-colors">Shop Products</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Section 1: Hero Section -->
+        <section class="hero-bg text-white section">
+            <div class="container mx-auto px-6 lg:px-8 py-48 md:py-64 text-center">
+                <h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter mb-6">High-Capacity HDD & Data Storage Solutions</h1>
+                <p class="text-lg md:text-xl max-w-3xl mx-auto mb-10 text-gray-300 font-light">Powering the world's most demanding environments, from enterprise data centers to professional creative workflows. Discover reliable, high-performance storage engineered for what's next.</p>
+                <div class="flex justify-center items-center space-x-4">
+                    <a href="#" class="bg-white hover:bg-gray-200 text-black font-semibold py-3 px-6 rounded-full transition duration-300">Explore Data Center & Business Solutions</a>
+                    <a href="#" class="text-white font-semibold py-3 px-6 rounded-full transition duration-300 group">Shop All Hard Drives <span class="opacity-60 group-hover:opacity-100 transition-opacity">&rarr;</span></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Social Proof & Authority -->
+        <section class="py-24 md:py-32 bg-black section">
+            <div class="container mx-auto px-6 lg:px-8 text-center">
+                <h2 class="text-4xl md:text-5xl font-bold tracking-tighter mb-4">Defining the Data Age</h2>
+                <p class="max-w-3xl mx-auto text-lg text-gray-400 font-light mb-16">Our legacy is written in the data we store. For over 50 years, we've engineered the breakthroughs that power progress.</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+                    <div class="stat-card p-8 rounded-2xl"><p class="text-6xl font-bold gradient-text mb-2" data-target="2.5">0</p><h3 class="text-xl font-semibold text-white">Zettabytes Shipped</h3><p class="text-gray-400 font-light text-sm">Powering global data infrastructure.</p></div>
+                    <div class="stat-card p-8 rounded-2xl"><p class="text-6xl font-bold gradient-text mb-2" data-target="50">0</p><h3 class="text-xl font-semibold text-white">Years of Innovation</h3><p class="text-gray-400 font-light text-sm">Pioneering storage since 1970.</p></div>
+                    <div class="stat-card p-8 rounded-2xl"><p class="text-6xl font-bold gradient-text mb-2" data-target="13000">0</p><h3 class="text-xl font-semibold text-white">Storage Patents</h3><p class="text-gray-400 font-light text-sm">Architecting the future of data.</p></div>
+                    <div class="stat-card p-8 rounded-2xl">
+                        <div class="flex items-center justify-center text-6xl font-bold gradient-text mb-2">
+                            <span data-target="4.8">0</span>
+                            <svg class="w-10 h-10 ml-2 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white">Customer Rating</h3><p class="text-gray-400 font-light text-sm">Based on thousands of verified reviews.</p>
+                    </div>
+                </div>
+                <div class="mt-20">
+                    <h3 class="text-lg font-semibold text-gray-400 mb-6">Trusted by Industry Leaders</h3>
+                    <div class="logo-scroller-container">
+                        <div class="logo-scroller">
+                            <div class="flex items-center space-x-16 px-8 grayscale opacity-60">
+                                <img src="https://placehold.co/120x40/FFFFFF/CCCCCC?text=CLIENT+A" alt="Client A Logo" class="h-8">
+                                <img src="https://placehold.co/120x40/FFFFFF/CCCCCC?text=CLIENT+B" alt="Client B Logo" class="h-8">
+                                <img src="https://placehold.co/120x40/FFFFFF/CCCCCC?text=CLIENT+C" alt="Client C Logo" class="h-8">
+                                <img src="https://placehold.co/120x40/FFFFFF/CCCCCC?text=CLIENT+D" alt="Client D Logo" class="h-8">
+                                <img src="https://placehold.co/120x40/FFFFFF/CCCCCC?text=CLIENT+E" alt="Client E Logo" class="h-8">
+                                <img src="https://placehold.co/120x40/FFFFFF/CCCCCC?text=CLIENT+F" alt="Client F Logo" class="h-8">
+                                <img src="https://placehold.co/120x40/FFFFFF/CCCCCC?text=CLIENT+G" alt="Client G Logo" class="h-8">
+                                <!-- Duplicate for seamless scroll -->
+                                <img src="https://placehold.co/120x40/FFFFFF/CCCCCC?text=CLIENT+A" alt="Client A Logo" class="h-8">
+                                <img src="https://placehold.co/120x40/FFFFFF/CCCCCC?text=CLIENT+B" alt="Client B Logo" class="h-8">
+                                <img src="https://placehold.co/120x40/FFFFFF/CCCCCC?text=CLIENT+C" alt="Client C Logo" class="h-8">
+                                <img src="https://placehold.co/120x40/FFFFFF/CCCCCC?text=CLIENT+D" alt="Client D Logo" class="h-8">
+                                <img src="https://placehold.co/120x40/FFFFFF/CCCCCC?text=CLIENT+E" alt="Client E Logo" class="h-8">
+                                <img src="https://placehold.co/120x40/FFFFFF/CCCCCC?text=CLIENT+F" alt="Client F Logo" class="h-8">
+                                <img src="https://placehold.co/120x40/FFFFFF/CCCCCC?text=CLIENT+G" alt="Client G Logo" class="h-8">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Interactive Product Finder -->
+        <section class="py-24 md:py-32 section">
+            <div class="container mx-auto px-6 lg:px-8">
+                <h2 class="text-4xl md:text-5xl font-bold tracking-tighter text-center mb-16">Find Your Perfect Drive</h2>
+                <div id="product-finder" class="max-w-4xl mx-auto bg-[#111] border border-gray-800 p-8 md:p-12 rounded-2xl">
+                    <div class="mb-10">
+                        <label class="block text-xl font-semibold mb-6 text-center text-gray-300">1. What is your primary use?</label>
+                        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4" id="use-case-buttons">
+                            <button data-use="gaming" class="finder-btn p-4 rounded-lg font-semibold text-gray-200">Gaming</button>
+                            <button data-use="nas" class="finder-btn p-4 rounded-lg font-semibold text-gray-200">NAS / Server</button>
+                            <button data-use="editing" class="finder-btn p-4 rounded-lg font-semibold text-gray-200">Video Editing</button>
+                            <button data-use="everyday" class="finder-btn p-4 rounded-lg font-semibold text-gray-200">Everyday Use</button>
+                        </div>
+                    </div>
+                    <div class="mb-10">
+                        <label class="block text-xl font-semibold mb-6 text-center text-gray-300">2. What's your priority?</label>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4" id="priority-buttons">
+                            <button data-priority="capacity" class="finder-btn p-4 rounded-lg font-semibold text-gray-200">Max Capacity</button>
+                            <button data-priority="speed" class="finder-btn p-4 rounded-lg font-semibold text-gray-200">High Speed</button>
+                            <button data-priority="reliability" class="finder-btn p-4 rounded-lg font-semibold text-gray-200">24/7 Reliability</button>
+                        </div>
+                    </div>
+                    <div id="finder-result" class="text-center bg-black p-8 rounded-lg hidden border border-gray-800">
+                        <p class="text-lg mb-4 text-gray-400">Your recommended solutions:</p>
+                        <div id="recommendation-grid" class="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-8">
+                            <!-- Product cards will be injected here by JavaScript -->
+                        </div>
+                        <a href="#" id="recommendation-link" class="mt-2 inline-block bg-blue-600 hover:bg-blue-500 text-white font-bold py-3 px-8 rounded-full transition duration-300">View All Recommended Drives</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Section 4: Solutions by Use Case -->
+        <section class="py-24 md:py-32 section">
+            <div class="container mx-auto px-6 lg:px-8">
+                <h2 class="text-4xl md:text-5xl font-bold tracking-tighter text-center mb-16">Engineered for the Mission</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                    <!-- Gaming -->
+                    <div class="bg-[#111] border border-gray-800 rounded-2xl overflow-hidden group hover:border-blue-500 transition-colors duration-300">
+                        <img src="https://www.westerndigital.com/content/dam/store/en-us/assets/solutions/gaming/hdd/gaming-every-gamer-banner-mobile.png" class="h-64 w-full object-cover" alt="Gaming setup">
+                        <div class="p-8"><h3 class="text-3xl font-bold mb-2">Gaming</h3><p class="text-gray-400 font-light mb-4">Unleash speed and capacity for your entire library.</p><a href="#" class="text-blue-400 font-semibold group-hover:text-white transition-colors">Shop WD_BLACK &rarr;</a></div>
+                    </div>
+                    <!-- Creative Pros -->
+                    <div class="bg-[#111] border border-gray-800 rounded-2xl overflow-hidden group hover:border-blue-500 transition-colors duration-300">
+                        <img src="https://www.westerndigital.com/content/dam/store/en-us/assets/solutions/professional-photography/professional-photography-backup.jpg" class="h-64 w-full object-cover" alt="Creative professional editing video">
+                        <div class="p-8"><h3 class="text-3xl font-bold mb-2">Creative Pros</h3><p class="text-gray-400 font-light mb-4">High-performance storage for demanding workflows.</p><a href="#" class="text-blue-400 font-semibold group-hover:text-white transition-colors">Explore SanDisk Pro &rarr;</a></div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- NAS -->
+                    <div class="bg-[#111] border border-gray-800 p-8 rounded-2xl hover:border-blue-500 transition-colors duration-300 group">
+                        <img src="https://placehold.co/80x80/1E40AF/FFFFFF?text=NAS" class="h-16 w-16 mb-4 rounded-full" alt="NAS Icon">
+                        <h3 class="text-2xl font-bold mb-2">NAS</h3><p class="text-gray-400 font-light mb-4">Power your personal cloud with 24/7 reliability.</p><a href="#" class="text-blue-400 font-semibold group-hover:text-white transition-colors">Discover WD Red &rarr;</a>
+                    </div>
+                    <!-- Surveillance -->
+                    <div class="bg-[#111] border border-gray-800 p-8 rounded-2xl hover:border-blue-500 transition-colors duration-300 group">
+                        <img src="https://placehold.co/80x80/5B21B6/FFFFFF?text=CCTV" class="h-16 w-16 mb-4 rounded-full" alt="Surveillance Icon">
+                        <h3 class="text-2xl font-bold mb-2">Surveillance</h3><p class="text-gray-400 font-light mb-4">Capture every frame with optimized recording.</p><a href="#" class="text-blue-400 font-semibold group-hover:text-white transition-colors">View WD Purple &rarr;</a>
+                    </div>
+                    <!-- RAID -->
+                    <div class="bg-[#111] border border-gray-800 p-8 rounded-2xl hover:border-blue-500 transition-colors duration-300 group">
+                        <img src="https://placehold.co/80x80/BE123C/FFFFFF?text=RAID" class="h-16 w-16 mb-4 rounded-full" alt="RAID Icon">
+                        <h3 class="text-2xl font-bold mb-2">RAID</h3><p class="text-gray-400 font-light mb-4">Performance and redundancy for critical data.</p><a href="#" class="text-blue-400 font-semibold group-hover:text-white transition-colors">Learn about RAID &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Product Portfolio & Capacity Filter -->
+        <section class="py-24 md:py-32 section">
+            <div class="container mx-auto px-6 lg:px-8">
+                <h2 class="text-4xl md:text-5xl font-bold tracking-tighter text-center mb-16">Explore Our Product Portfolio</h2>
+                <div class="mb-12">
+                    <h3 class="text-xl font-semibold text-center text-gray-300 mb-6">Shop by Capacity</h3>
+                    <div class="flex justify-center flex-wrap gap-4">
+                        <a href="#" class="bg-[#111] border border-gray-800 hover:border-blue-500 hover:text-white text-gray-300 font-medium py-2 px-6 rounded-full transition">1-4TB</a>
+                        <a href="#" class="bg-[#111] border border-gray-800 hover:border-blue-500 hover:text-white text-gray-300 font-medium py-2 px-6 rounded-full transition">5-10TB</a>
+                        <a href="#" class="bg-[#111] border border-gray-800 hover:border-blue-500 hover:text-white text-gray-300 font-medium py-2 px-6 rounded-full transition">11-20TB</a>
+                        <a href="#" class="bg-[#111] border border-gray-800 hover:border-blue-500 hover:text-white text-gray-300 font-medium py-2 px-6 rounded-full transition">21-50TB</a>
+                        <a href="#" class="bg-[#111] border border-gray-800 hover:border-blue-500 hover:text-white text-gray-300 font-medium py-2 px-6 rounded-full transition">Over 50TB</a>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <div class="bg-[#111] border border-gray-800 p-8 rounded-2xl"><h3 class="text-2xl font-bold mb-2">Internal HDDs</h3><p class="text-gray-400 font-light mb-4">For desktops, workstations, and gaming rigs.</p><a href="#" class="text-blue-400 font-semibold hover:text-white transition-colors">Shop Internal &rarr;</a></div>
+                    <div class="bg-[#111] border border-gray-800 p-8 rounded-2xl"><h3 class="text-2xl font-bold mb-2">External HDDs</h3><p class="text-gray-400 font-light mb-4">High-capacity desktop drives for home and office.</p><a href="#" class="text-blue-400 font-semibold hover:text-white transition-colors">Shop External &rarr;</a></div>
+                    <div class="bg-[#111] border border-gray-800 p-8 rounded-2xl"><h3 class="text-2xl font-bold mb-2">Portable HDDs</h3><p class="text-gray-400 font-light mb-4">Compact drives for storage on the go.</p><a href="#" class="text-blue-400 font-semibold hover:text-white transition-colors">Shop Portable &rarr;</a></div>
+                    <div class="bg-[#111] border border-gray-800 p-8 rounded-2xl"><h3 class="text-2xl font-bold mb-2">Data Center Storage</h3><p class="text-gray-400 font-light mb-4">Enterprise-grade drives for servers, cloud, and big data.</p><a href="#" class="text-blue-400 font-semibold hover:text-white transition-colors">Explore Data Center &rarr;</a></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Dedicated B2B Hub -->
+        <section class="py-24 md:py-32 section">
+            <div class="container mx-auto px-6 lg:px-8">
+                <div class="bg-[#111] border border-gray-800 rounded-2xl p-12 md:p-16 grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-4xl md:text-5xl font-bold tracking-tighter mb-4">The Partner for Your Business-Critical Data</h2>
+                        <p class="text-lg text-gray-400 mb-8 font-light">Get dedicated support, flexible purchasing options, and access to our full portfolio of enterprise-grade storage solutions. Partner with us to build the future of your data infrastructure.</p>
+                        <div class="flex items-center space-x-4">
+                            <a href="#" class="bg-blue-600 hover:bg-blue-500 text-white font-bold py-3 px-8 rounded-full transition duration-300">Explore Business Benefits</a>
+                            <a href="#" class="text-gray-300 font-medium hover:text-white transition-colors">Contact Sales &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="hidden md:block">
+                        <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2138&auto=format&fit=crop" class="rounded-lg" alt="Business Professionals Collaborating">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7: Best Sellers & Promotions -->
+        <section class="py-24 md:py-32 section">
+            <div class="container mx-auto px-6 lg:px-8">
+                <h2 class="text-4xl md:text-5xl font-bold tracking-tighter text-center mb-16">Popular Products & Current Offers</h2>
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <div class="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-8">
+                        <!-- Best Seller 1 -->
+                        <div class="group bg-[#111] border border-gray-800 rounded-2xl overflow-hidden">
+                            <div class="bg-black"><img src="https://placehold.co/400x300/111111/FFFFFF?text=Product+1" alt="Best Seller 1" class="w-full h-48 object-contain p-4 transform group-hover:scale-105 transition-transform duration-300"></div>
+                            <div class="p-6"><h3 class="font-semibold text-white text-lg">WD My Passport 4TB</h3><p class="text-sm text-gray-400 mb-2 font-light">Portable Hard Drive</p><p class="font-bold text-xl text-white">$109.99</p></div>
+                        </div>
+                        <!-- Best Seller 2 -->
+                        <div class="group bg-[#111] border border-gray-800 rounded-2xl overflow-hidden">
+                            <div class="bg-black"><img src="https://placehold.co/400x300/111111/FFFFFF?text=Product+2" alt="Best Seller 2" class="w-full h-48 object-contain p-4 transform group-hover:scale-105 transition-transform duration-300"></div>
+                            <div class="p-6"><h3 class="font-semibold text-white text-lg">WD Red Pro 10TB</h3><p class="text-sm text-gray-400 mb-2 font-light">NAS Hard Drive</p><p class="font-bold text-xl text-white">$279.99</p></div>
+                        </div>
+                    </div>
+                    <!-- Promotion -->
+                    <div class="promo-bg rounded-2xl p-8 flex flex-col justify-center items-center text-center text-white">
+                        <h3 class="text-3xl font-bold mb-2">Weekly Sale</h3>
+                        <p class="text-lg mb-4 font-light text-blue-200">Get 20% off all WD Elements desktop drives.</p>
+                        <a href="#" class="bg-white hover:bg-gray-200 text-black font-bold py-3 px-8 rounded-full transition duration-300">Shop the Sale</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 8: Support Hub -->
+        <section class="py-24 md:py-32 section">
+            <div class="container mx-auto px-6 lg:px-8">
+                <h2 class="text-4xl md:text-5xl font-bold tracking-tighter text-center mb-16">Support & Resources</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    <div class="bg-[#111] border border-gray-800 p-8 rounded-2xl"><h3 class="text-2xl font-bold mb-6">Self-Service</h3><ul class="space-y-4 text-gray-300 font-light"><li class="flex items-center"><a href="#" class="hover:text-white transition-colors">Software Downloads</a></li><li class="flex items-center"><a href="#" class="hover:text-white transition-colors">Warranty Services</a></li><li class="flex items-center"><a href="#" class="hover:text-white transition-colors">Order Status</a></li></ul></div>
+                    <div class="bg-[#111] border border-gray-800 p-8 rounded-2xl"><h3 class="text-2xl font-bold mb-6">Knowledge Base</h3><ul class="space-y-4 text-gray-300 font-light"><li class="flex items-center"><a href="#" class="hover:text-white transition-colors">FAQs</a></li><li class="flex items-center"><a href="#" class="hover:text-white transition-colors">Data Recovery Services</a></li><li class="flex items-center"><a href="#" class="hover:text-white transition-colors">Product Security</a></li></ul></div>
+                    <div class="bg-[#111] border border-gray-800 p-8 rounded-2xl"><h3 class="text-2xl font-bold mb-6">Get Help</h3><ul class="space-y-4 text-gray-300 font-light"><li class="flex items-center"><a href="#" class="hover:text-white transition-colors">Chat With Us</a></li><li class="flex items-center"><a href="#" class="hover:text-white transition-colors">Call Us</a></li><li class="flex items-center"><a href="#" class="hover:text-white transition-colors">Contact Support</a></li></ul></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 9: Content & Education -->
+        <section class="py-24 md:py-32 section">
+            <div class="container mx-auto px-6 lg:px-8">
+                <h2 class="text-4xl md:text-5xl font-bold tracking-tighter text-center mb-16">Insights & Resources</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="group bg-[#111] border border-gray-800 rounded-2xl overflow-hidden">
+                        <img src="https://placehold.co/400x250/111111/FFFFFF?text=Insight+1" alt="Article 1" class="w-full h-48 object-cover transform group-hover:scale-105 transition-transform duration-300">
+                        <div class="p-6"><h3 class="text-xl font-bold mb-2">The Future of the Data Center</h3><p class="text-gray-400 font-light mb-4">An analysis of SMR technology and the path to next-generation HDD capacity.</p><a href="#" class="text-blue-400 font-semibold group-hover:text-white transition-colors">Read the Whitepaper &rarr;</a></div>
+                    </div>
+                    <div class="group bg-[#111] border border-gray-800 rounded-2xl overflow-hidden">
+                        <img src="https://placehold.co/400x250/111111/FFFFFF?text=Insight+2" alt="Article 2" class="w-full h-48 object-cover transform group-hover:scale-105 transition-transform duration-300">
+                        <div class="p-6"><h3 class="text-xl font-bold mb-2">Understanding RAID</h3><p class="text-gray-400 font-light mb-4">A primer on RAID levels and how they can protect your data and improve performance.</p><a href="#" class="text-blue-400 font-semibold group-hover:text-white transition-colors">Learn About RAID &rarr;</a></div>
+                    </div>
+                    <div class="group bg-[#111] border border-gray-800 rounded-2xl overflow-hidden">
+                        <img src="https://placehold.co/400x250/111111/FFFFFF?text=Insight+3" alt="Article 3" class="w-full h-48 object-cover transform group-hover:scale-105 transition-transform duration-300">
+                        <div class="p-6"><h3 class="text-xl font-bold mb-2">HDD vs. SSD: What's the Difference?</h3><p class="text-gray-400 font-light mb-4">Understand the key differences to choose the right type of drive for your needs.</p><a href="#" class="text-blue-400 font-semibold group-hover:text-white transition-colors">Read the Comparison &rarr;</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-800">
+        <div class="container mx-auto px-6 lg:px-8 py-16">
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8">
+                <div><h4 class="font-semibold mb-4 text-white">Shop</h4><ul class="space-y-3 text-gray-400 font-light"><li><a href="#" class="hover:text-white transition-colors">Products</a></li><li><a href="#" class="hover:text-white transition-colors">Promotions</a></li></ul></div>
+                <div><h4 class="font-semibold mb-4 text-white">Support</h4><ul class="space-y-3 text-gray-400 font-light"><li><a href="#" class="hover:text-white transition-colors">Support Home</a></li><li><a href="#" class="hover:text-white transition-colors">Downloads</a></li><li><a href="#" class="hover:text-white transition-colors">Warranty</a></li></ul></div>
+                <div><h4 class="font-semibold mb-4 text-white">Company</h4><ul class="space-y-3 text-gray-400 font-light"><li><a href="#" class="hover:text-white transition-colors">About Us</a></li><li><a href="#" class="hover:text-white transition-colors">Careers</a></li><li><a href="#" class="hover:text-white transition-colors">Blog</a></li></ul></div>
+                <div><h4 class="font-semibold mb-4 text-white">Legal</h4><ul class="space-y-3 text-gray-400 font-light"><li><a href="#" class="hover:text-white transition-colors">Privacy</a></li><li><a href="#" class="hover:text-white transition-colors">Terms of Sale</a></li></ul></div>
+                <div><h4 class="font-semibold mb-4 text-white">Follow Us</h4><div class="flex space-x-4"><a href="#" class="text-gray-500 hover:text-white transition-colors"><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22.46,6C21.78,6.34 21.05,6.58 20.28,6.69C21.08,6.22 21.69,5.46 22,4.58C21.26,5.03 20.46,5.36 19.62,5.58C18.92,4.84 17.93,4.33 16.82,4.33C14.69,4.33 12.98,6.04 12.98,8.17C12.98,8.48 13.02,8.79 13.08,9.08C9.48,8.89 6.28,7.24 4.13,4.8C3.76,5.45 3.55,6.2 3.55,7C3.55,8.41 4.27,9.66 5.38,10.38C4.73,10.36 4.11,10.18 3.58,9.88V9.93C3.58,11.87 5,13.49 6.84,13.85C6.5,13.94 6.14,13.99 5.77,13.99C5.51,13.99 5.26,13.97 5.02,13.92C5.53,15.5 6.94,16.63 8.62,16.66C7.21,17.76 5.46,18.41 3.58,18.41C3.26,18.41 2.95,18.39 2.64,18.35C4.33,19.45 6.34,20.1 8.5,20.1C16.81,20.1 20.65,13.37 20.65,8.61C20.65,8.43 20.65,8.25 20.64,8.07C21.45,7.5 22.04,6.8 22.46,6Z"></path></svg></a><a href="#" class="text-gray-500 hover:text-white transition-colors"><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.73C9.63,17.1 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"></path></svg></a></div></div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-gray-800 text-center text-gray-500 text-sm font-light"><p>&copy; 2024 Western Digital Corporation or its affiliates. All rights reserved.</p></div>
+        </div>
+    </footer>
+
+    <script>
+        // --- Intersection Observer for fade-in animations ---
+        const sections = document.querySelectorAll('.section');
+        const sectionObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+        sections.forEach(section => {
+            sectionObserver.observe(section);
+        });
+
+        // --- Social Proof Counter Animation ---
+        const counters = document.querySelectorAll('[data-target]');
+        const speed = 200; 
+        const counterObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const counter = entry.target;
+                    const target = +counter.getAttribute('data-target');
+                    let count = 0;
+                    const animateCounter = () => {
+                        const increment = target / speed;
+                        count += increment;
+                        if (count < target) {
+                            if (String(target).includes('.')) {
+                                counter.innerText = count.toFixed(1);
+                            } else {
+                                counter.innerText = Math.ceil(count).toLocaleString();
+                            }
+                            requestAnimationFrame(animateCounter);
+                        } else {
+                            if (String(target).includes('.')) {
+                                counter.innerText = target.toFixed(1);
+                            } else {
+                                counter.innerText = target.toLocaleString();
+                            }
+                        }
+                    };
+                    animateCounter();
+                    observer.unobserve(counter);
+                }
+            });
+        }, { threshold: 0.8 });
+        counters.forEach(counter => {
+            counterObserver.observe(counter);
+        });
+
+        // --- Interactive Product Finder Logic ---
+        const useCaseButtons = document.getElementById('use-case-buttons');
+        const priorityButtons = document.getElementById('priority-buttons');
+        const finderResult = document.getElementById('finder-result');
+        const recommendationGrid = document.getElementById('recommendation-grid');
+        const recommendationLink = document.getElementById('recommendation-link');
+        let selectedUseCase = null;
+        let selectedPriority = null;
+        
+        // Mock product data
+        const recommendations = {
+            gaming_speed: {
+                categoryName: "WD_BLACK Gaming Drives",
+                categoryLink: "#",
+                products: [
+                    { name: "WD_BLACK SN850X", spec: "NVMe™ SSD", price: "$159.99", image: "https://placehold.co/300x200/111111/FFFFFF?text=SN850X" },
+                    { name: "WD_BLACK P40", spec: "Game Drive SSD", price: "$119.99", image: "https://placehold.co/300x200/111111/FFFFFF?text=P40" },
+                    { name: "WD_BLACK D30", spec: "Game Drive SSD", price: "$149.99", image: "https://placehold.co/300x200/111111/FFFFFF?text=D30" }
+                ]
+            },
+            nas_reliability: {
+                categoryName: "WD Red NAS Drives",
+                categoryLink: "#",
+                products: [
+                    { name: "WD Red Pro", spec: "Up to 22TB", price: "$499.99", image: "https://placehold.co/300x200/111111/FFFFFF?text=Red+Pro" },
+                    { name: "WD Red Plus", spec: "Up to 14TB", price: "$249.99", image: "https://placehold.co/300x200/111111/FFFFFF?text=Red+Plus" },
+                    { name: "WD Red SA500", spec: "NAS SATA SSD", price: "$129.99", image: "https://placehold.co/300x200/111111/FFFFFF?text=SA500" }
+                ]
+            },
+            // Add more combinations as needed
+        };
+
+        function updateRecommendation() {
+            if (selectedUseCase && selectedPriority) {
+                const key = `${selectedUseCase}_${selectedPriority}`;
+                const resultData = recommendations[key] || recommendations['nas_reliability']; // Fallback
+
+                recommendationGrid.innerHTML = ''; // Clear previous results
+
+                resultData.products.forEach(product => {
+                    const productCard = `
+                        <div class="bg-[#1C1C1C] border border-gray-700 rounded-lg p-4 text-center transform hover:scale-105 transition-transform duration-300">
+                            <img src="${product.image}" alt="${product.name}" class="w-full h-24 object-contain mb-4 rounded">
+                            <h4 class="font-semibold text-white">${product.name}</h4>
+                            <p class="text-sm text-gray-400">${product.spec}</p>
+                            <p class="text-lg font-bold text-white mt-2">${product.price}</p>
+                        </div>
+                    `;
+                    recommendationGrid.innerHTML += productCard;
+                });
+                
+                recommendationLink.textContent = `View All ${resultData.categoryName}`;
+                recommendationLink.href = resultData.categoryLink;
+                finderResult.classList.remove('hidden');
+            }
+        }
+
+        useCaseButtons.addEventListener('click', (e) => {
+            if (e.target.tagName === 'BUTTON') {
+                [...useCaseButtons.children].forEach(btn => btn.classList.remove('active'));
+                e.target.classList.add('active');
+                selectedUseCase = e.target.dataset.use;
+                updateRecommendation();
+            }
+        });
+
+        priorityButtons.addEventListener('click', (e) => {
+            if (e.target.tagName === 'BUTTON') {
+                [...priorityButtons.children].forEach(btn => btn.classList.remove('active'));
+                e.target.classList.add('active');
+                selectedPriority = e.target.dataset.priority;
+                updateRecommendation();
+            }
+        });
+    </script>
+</body>
+</html>
